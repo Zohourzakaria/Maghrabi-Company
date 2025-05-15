@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>موقع شركة المغربي لصناعة الأحذية والتجارة</title>
+    <link rel="stylesheet" href="mag.css">
+</head>
+<body>
+
+    <!-- زر تبديل اللغة -->
+    <div class="lang-buttons">
+        <button onclick="switchLang('ar')">العربية</button>
+        <button onclick="switchLang('en')">English</button>
+    </div>
+
+    <!-- القائمة العلوية -->
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#home" id="home-link">الرئيسية</a></li>
+                <li><a href="#products" id="products-link">المنتجات</a></li>
+                <li><a href="#offers" id="offers-link">العروض</a></li>
+                <li><a href="#contact" id="contact-link">اتصل بنا</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- قسم الرئيسية (Hero) -->
+    <section class="hero" id="home">
+        <div class="hero-content">
+            <h1 id="hero-title">أفضل الأحذية لأفضل أداء</h1>
+            <p id="hero-description">اكتشف أحدث مجموعاتنا الآن.</p>
+            <button id="hero-button">تسوق الآن</button>
+        </div>
+    </section>
+
+    <!-- قسم المنتجات -->
+    <section class="products" id="products">
+        <h2 id="products-title">منتجاتنا</h2>
+        <div class="product-list">
+            <!-- إضافة المنتجات -->
+            <div class="product-item">
+                <img src="123.jpg" alt="حذاء 1">
+                <p>حذاء رياضي مريح</p>
+            </div>
+            <div class="product-item">
+                <img src="456.jpg" alt="حذاء 2">
+                <p>حذاء أنيق</p>
+            </div>
+            <div class="product-item">
+                <img src="789.jpg" alt="حذاء 3">
+                <p>حذاء كاجوال </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- قسم العروض -->
+    <section class="offers" id="offers">
+        <h2 id="offers-title">عروضنا</h2>
+        <p id="offers-description">خصومات تصل إلى 30% على أحدث الموديلات!</p>
+    </section>
+
+    <!-- قسم اتصل بنا -->
+    <section class="contact" id="contact">
+        <h2 id="contact-title">اتصل بنا</h2>
+        <p id="contact-description">للتواصل معنا، يرجى الاتصال على 0123456789 أو زيارة مقرنا الرئيسي.</p>
+    </section>
+
+    <script src="mag.js"></script>
+</body>
+</html>

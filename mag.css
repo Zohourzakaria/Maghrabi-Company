@@ -1,0 +1,173 @@
+/* إعدادات الـ reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    direction: rtl; /* لتغيير الاتجاه للكتابة من اليمين لليسار */
+}
+
+/* التمرير السلس بين الأقسام */
+html {
+    scroll-behavior: smooth;
+}
+
+/* التنسيق الأساسي للجسم */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #333333; /* خلفية داكنة */
+    color: #FFFFFF; /* نص أبيض */
+    padding: 0;
+    margin: 0;
+}
+
+/* زر تبديل اللغة */
+.lang-buttons {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    z-index: 10;
+}
+
+.lang-buttons button {
+    padding: 6px 14px;
+    margin: 2px;
+    background-color: #222;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.lang-buttons button:hover {
+    background-color: #555;
+}
+
+/* قسم الرئيسية (Hero) */
+.hero {
+    background-image: url('https://images.pexels.com/photos/2529148/pexels-photo-2529148.jpeg'); /* الصورة المستخدمة كخلفية */
+    background-size: cover;
+    background-position: center;
+    height: 100vh; /* ارتفاع الشاشة بالكامل */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: #FFFFFF;
+    position: relative;
+}
+
+.hero::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.5); /* تغميق الخلفية */
+    z-index: 1;
+}
+
+.hero-content {
+    position: relative;
+    z-index: 2;
+}
+
+.hero h1 {
+    font-size: 3rem;
+    margin-bottom: 20px;
+}
+
+.hero p {
+    font-size: 1.5rem;
+}
+
+.hero button {
+    padding: 10px 20px;
+    background-color: #f1c40f;
+    border: none;
+    cursor: pointer;
+    font-size: 1rem;
+}
+
+.hero button:hover {
+    background-color: #e1b10f;
+}
+
+/* تنسيق للقائمة العلوية */
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    background-color: #222;
+    padding: 10px 0;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: #f1c40f;
+    text-decoration: none;
+    font-size: 1.2rem;
+}
+
+nav ul li a:hover {
+    color: #fff;
+}
+
+/* قسم المنتجات */
+.products {
+    padding: 40px 20px;
+    text-align: center;
+    background-color: #444;
+}
+
+.product-list {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.product-item {
+    margin: 15px;
+    text-align: center;
+    width: 250px;
+}
+
+.product-item img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+
+.product-item p {
+    margin-top: 10px;
+    font-size: 1.2rem;
+    color: #fff;
+}
+
+/* قسم العروض */
+.offers {
+    background-color: #fff;
+    color: #333;
+    padding: 40px 20px;
+    text-align: center;
+}
+
+.offers p {
+    font-size: 1.2rem;
+}
+
+/* قسم الاتصال */
+.contact {
+    background-color: #333;
+    color: #fff;
+    padding: 40px 20px;
+    text-align: center;
+}
+
+.contact p {
+    font-size: 1.2rem;
+}
